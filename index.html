@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="search-container">
+                <input id="moviename" type="text" placeholder="Search a movie by name..">
+                <button class="btn" onclick="gen()" >search more</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="intro" id="intro">
+            <h1>Want the complete <span class="highlight">details of a movie?</span> </h1>
+            <p>Search for the movie name and get complete details including directors, actors, IMDB ratings, votes, earnings and more interesting facts.</p>
+        </div>
+    </section>
+    <div id="l"></div>
+    <section>
+    <div class="movie-content">
+        <div class="content">
+           <h1 id="h1"></h1>
+            <p id="p" ></p>
+        </div>
+        <img class="movie-img" id="img" src="" alt="">
+    </div>
+    </section>
+   
+    <script src="app.js"></script>
+</body>
+</html>
