@@ -12,8 +12,8 @@ loder=()=>{
   }
 }
 gen=()=>{
-  loadingstatus=true;
-loder()
+//   loadingstatus=true;
+// loder()
 let img=document.getElementById('img');
     let moviename=document.getElementById('moviename').value;
     let h1= document.getElementById('h1');
@@ -25,8 +25,8 @@ let img=document.getElementById('img');
         return response.json();
       })
       .then(function(data) {
-        loadingstatus=false;
-        loder();
+        // loadingstatus=false;
+        // loder();
         h1.innerText=data.Title;
         p.innerText=data.Plot;
         console.log(data);
