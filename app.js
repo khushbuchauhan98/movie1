@@ -18,7 +18,7 @@ loder()
     let moviename=document.getElementById('moviename').value;
     
     let apiquery=api + moviename;
-    console.log(apiquery)
+    console.log(apiquery);
     fetch(apiquery).then((response)=> {
         return response.json();
       }) .then((data)=> {
@@ -31,5 +31,5 @@ loder()
         p.innerText=data.Plot;
         console.log(data);
         img.src=data.Poster;
-      });
+      })
 }
