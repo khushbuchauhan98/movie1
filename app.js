@@ -23,7 +23,7 @@ gen =() =>{
   fetch(apiquery).then((response) => {
     return response.json()
   }).then((data) => {
-    console.log(data);
+  
     loadingstatus = false;
     loder()
     let img = document.getElementById('img');
@@ -31,7 +31,7 @@ gen =() =>{
     let p = document.getElementById('p')
     h1.innerText = data.Title;
     p.innerText = data.Plot;
-    
+    console.log(data);
     img.src = data.Poster;
   })
 }
