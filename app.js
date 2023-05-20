@@ -1,4 +1,4 @@
-let api = 'https://www.omdbapi.com/?i=tt3896198&apikey=c997e31e&t='
+let api = 'https://www.omdbapi.com/?i=tt3896198&apikey=c997e31e&t=';
 let loadingstatus = false;
 loder = () => {
   let intro = document.getElementById('intro');
