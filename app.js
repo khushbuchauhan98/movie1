@@ -20,7 +20,7 @@ gen=()=> {
   
   fetch(apiquery).then((response) => {
     return response.json()
-  }).then((data)=>{  
+  }).then((data) => {  
     console.log(data);
     loadingstatus = false;
     loder()
