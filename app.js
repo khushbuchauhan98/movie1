@@ -39,7 +39,7 @@ loader=()=>{
 
     let getintro = document.getElementById('intro');
     getintro.style.display = 'none';
-    let getloader = document.getElementById('loader');
+    let getloader = document.getElementById('l');
  if(loadingstatus==true)
 {
  getloader.classList.add('loader')
