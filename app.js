@@ -1,6 +1,6 @@
 let api = 'https://www.omdbapi.com/?i=tt3896198&apikey=c997e31e&t='
 let loadingstatus = false;
-loder=()=>{
+loder =() =>{
   let intro = document.getElementById('intro');
   intro.style.display = 'none'
   let loder = document.getElementById('l');
@@ -11,7 +11,7 @@ loder=()=>{
     loder.classList.remove('loader');
   }
 }
-gen=()=>{
+gen =() =>{
   loadingstatus = true;
   loder()
 
