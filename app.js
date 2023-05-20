@@ -16,23 +16,20 @@ gen=()=>{
 loder()
 
     let moviename=document.getElementById('moviename').value;
-   
+    
     let apiquery=api + moviename;
-    // console.log(apiq)
-    fetch(apiquery)
-      .then(function(response) {
+    console.log(apiquery)
+    fetch(apiquery).then((response)=> {
         return response.json();
-      })
-      .then(function(data) {
-        console.log(data);
+      }) .then((data)=> {
         loadingstatus=false;
         loder()
         let img=document.getElementById('img');
         let h1= document.getElementById('h1');
-        let p= document.getElementById('p');
+    let p= document.getElementById('p')
         h1.innerText=data.Title;
         p.innerText=data.Plot;
-      
+        console.log(data);
         img.src=data.Poster;
       });
 }
