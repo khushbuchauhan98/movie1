@@ -53,8 +53,8 @@ gen=()=>{
     loadingstatus = true;
     loader()
 
-    let getmoviename = document.getElementById('moviename');
-    let apiwithmovie = api + getmoviename.value;
+    let getmoviename = document.getElementById('moviename').value;
+    let apiwithmovie = api + getmoviename;
     console.log(apiwithmovie);
     fetch(apiwithmovie).then((response)=>{
         return response.json()
