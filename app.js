@@ -1,8 +1,8 @@
-let api = 'https://www.omdbapi.com/?i=tt3896198&apikey=c997e31e&t='
+let api = ' http://www.omdbapi.com/?i=tt3896198&apikey=61e576a4&t=';
 let loadingstatus = false;
 loder=()=>{
   let intro = document.getElementById('intro');
-  intro.style.display = 'none';
+  intro.style.display = 'none'
   let loder = document.getElementById('l');
   if (loadingstatus == true) {
     loder.classList.add('loader');
