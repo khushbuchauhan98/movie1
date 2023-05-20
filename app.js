@@ -20,9 +20,9 @@ gen =() =>{
   let apiquery = api + moviename;
   console.log(apiquery);
 
-  fetch(apiquery).then((response)=>{
+  fetch(apiquery).then((response) => {
     return response.json()
-  }).then((data)=> {
+  }).then((data) => {
     console.log(data);
     loadingstatus = false;
     loder()
